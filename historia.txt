@@ -1,3 +1,4 @@
 Archivo para pruebas de historia.
 
-Javier tiene un hijo llamado Manuel.
+Javier tiene dos hijos:
+Uno se llama Manuel, el otro se llama Luis
