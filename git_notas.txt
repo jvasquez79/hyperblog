@@ -1,0 +1,109 @@
+Videos
+https://drive.google.com/folderview?id=19JynaVxD5xKdwu_k_hn9ireIGOTChsOH
+
+Abrir Visual Studio Code desde Git Bash
+$ code
+
+Colocar archivo como "tracked"
+git add archivo
+git add .		(pone como "tracked" todos los archivos del directorio actual)
+
+Cambiar estado de un archivo a "untracked"
+git rm --cache archivo
+
+Ver configuración
+git config --list				(muestra configuración en modo lista)
+git config --list --show-origin	(muestra ubicación física de cada configuración)
+
+Configurar usuario
+git config --global user.name "Usuario"
+git config --global user.email "xxxxx@gmail.com"
+
+Crear nueva versión del repositorio luego de haber hecho cambios
+git commit					(se abre un editor para colocar un mensaje)
+git commit -m "Mensaje"		(si ya se ejecutó "add")
+git commit -am "Mensaje"	(para saltar el paso de hacer "add")
+
+Ver historial de cambios
+git log
+git log --stat											(más detalles, cambios en cada archivo)
+git log --graph --decorate --oneline					(versión gráfica del historial del repositorio)
+alias arbolito="git log --graph --decorate --oneline"	(crear un alias a partir del comando anterior)
+
+Analizar cambios en última versión de un archivo
+git show archivo
+
+Para guardar cambios en editor vin
+Esc Shift zz
+
+Ver diferencias 
+git diff numero1 numero2	(entre dos commit, colocar primero commit más antiguo)
+git diff					(entre directorio local y staging)
+
+Volver en el tiempo
+git reset numero --hard	(regresa el repositorio al commit "numero" perdiendo cambios actuales)
+git reset numero --soft	(regresa el repositorio al commit "numero" dejando cambios actuales en staging)
+
+Navegar entre commits
+git checkout numero archivo	(cargar versión de "archivo" como se encontraba en el checkout "numero")
+git checkout master			(regresa a versión actual del repositorio, rama maestra)
+
+https://github.com/jvasquez79/hyperblog.git
+
+Trabajar con remotos
+git remote											(muestra si existe algún repositorio remoto configurado)
+git remote -v										(muestra información de repositorios remotos)
+git remote add origin url							(agrega url como repositorio remoto, puede ser https o ssh)
+git push origin master								(envía rama master al repositorio remoto)
+git pull											(combinación de git fetch y git merge)
+git pull origin master								(obtiene rama maestra del repositorio remoto)
+git pull origin master --allow-unrelated-histories	(para sincronizar por primera vez teniendo un repositorio local y uno remoto)
+git clone url										(obtiene repositorio remoto y lo crea en máquina local)
+git remote set-url origin url						(cambia url de repositorio remoto)
+
+Trabajando con ramas
+git branch		(lista ramas existentes)
+git branch rama	(crea rama "rama", se usa git checkout rama para visualizarla)
+git merge rama	(fusiona rama actual con "rama")
+
+Notas sobre merge
+Una acción de merge guarda los resultados en la rama actual y funciona como un commit.
+Cuando ocurre un conflicto, el repositorio queda en un estado de merge hasta que se resuelva el conflicto y se haga commit.
+
+####################
+Creación de llaves
+
+ssh-keygen -t rsa -b 4096 -C "xxxxx@gmail.com"
+
++---[RSA 4096]----+
+|         .oo.    |
+|         ..O..   |
+|          X.=o   |
+|         + O. E  |
+|        S B .  + |
+|         = o  o =|
+|        ..+  + *o|
+|          oo+.&  |
+|         ...=/=. |
++----[SHA256]-----+
+
+Abrir llave pública y copiar
+
+Verificar ejecución de agente de llaves
+$ eval $(ssh-agent -s)
+
+Agregar llave privada
+$ ssh-add ~/.ssh/id_rsa
+
+Crear llave en GitHub y pegar
+
+Cambiar origin
+git remote set-url origin push git@github.com:jvasquez79/hyperblog.git
+
+####################
+
+Etiquetas
+git tag -a v0.1 -m "mensaje" 1b56158	(crea etiqueta llamada "v0.1" sobre commit 1b56158)
+git tag									(muestra etiquetas)
+git show-ref --tags						(muestra etiquetas y commits correspondientes)
+
