@@ -48,7 +48,7 @@ Navegar entre commits
 git checkout numero archivo	(cargar versión de "archivo" como se encontraba en el checkout "numero")
 git checkout master			(regresa a versión actual del repositorio, rama maestra)
 
-https://github.com/jvasquez79/hyperblog.git
+https://github.com/xxxxx/hyperblog.git
 
 Trabajar con remotos
 git remote											(muestra si existe algún repositorio remoto configurado)
@@ -98,7 +98,7 @@ $ ssh-add ~/.ssh/id_rsa
 Crear llave en GitHub y pegar
 
 Cambiar origin
-git remote set-url origin push git@github.com:jvasquez79/hyperblog.git
+git remote set-url origin push git@github.com:xxxxx/hyperblog.git
 
 ####################
 
