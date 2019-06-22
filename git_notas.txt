@@ -4,6 +4,9 @@ https://drive.google.com/folderview?id=19JynaVxD5xKdwu_k_hn9ireIGOTChsOH
 Abrir Visual Studio Code desde Git Bash
 $ code
 
+Abre herramienta gráfica
+gitk
+
 Colocar archivo como "tracked"
 git add archivo
 git add .		(pone como "tracked" todos los archivos del directorio actual)
@@ -62,9 +65,11 @@ git clone url										(obtiene repositorio remoto y lo crea en máquina local)
 git remote set-url origin url						(cambia url de repositorio remoto)
 
 Trabajando con ramas
-git branch		(lista ramas existentes)
-git branch rama	(crea rama "rama", se usa git checkout rama para visualizarla)
-git merge rama	(fusiona rama actual con "rama")
+git branch				(lista ramas existentes)
+git branch rama			(crea rama "rama", se usa git checkout rama para visualizarla)
+git show-branch			(muestra ramas existentes y su historia)
+git show-branch --all	(igual que anterior pero con más detalle)
+git merge rama			(fusiona rama actual con "rama")
 
 Notas sobre merge
 Una acción de merge guarda los resultados en la rama actual y funciona como un commit.
@@ -106,4 +111,7 @@ Etiquetas
 git tag -a v0.1 -m "mensaje" 1b56158	(crea etiqueta llamada "v0.1" sobre commit 1b56158)
 git tag									(muestra etiquetas)
 git show-ref --tags						(muestra etiquetas y commits correspondientes)
+git push origin --tags					(envía etiquetas locales al repositorio remoto)
+git tag -d etiqueta						(elimina el tag etiqueta del repositorio local)
+
 
