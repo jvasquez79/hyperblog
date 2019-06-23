@@ -39,7 +39,7 @@ git config --global alias.arbolito "log --all --graph --decorate --oneline"	(cre
 Analizar cambios en última versión de un archivo
 git show archivo
 
-Para guardar cambios en editor vin
+Para guardar cambios en editor vim
 Esc Shift zz
 
 Ver diferencias 
