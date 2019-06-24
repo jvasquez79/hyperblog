@@ -29,14 +29,17 @@ git commit -am "Mensaje"	(para saltar el paso de hacer "add")
 
 Ver historial de cambios
 git log
-git log --stat											(más detalles, cambios en cada archivo)
-git log --graph --decorate --oneline					(versión gráfica del historial del repositorio)
-alias arbolito="git log --graph --decorate --oneline"	(crear un alias a partir del comando anterior)
+git log --stat											    (más detalles, cambios en cada archivo)
+git log --all --graph --decorate --oneline					(versión gráfica del historial del repositorio)
+
+Uso de alias
+alias arbolito="git log --all --graph --decorate --oneline"	                (crear un alias temporal)
+git config --global alias.arbolito "log --all --graph --decorate --oneline"	(crear un alias permanente a ser invocado con "git arbolito")
 
 Analizar cambios en última versión de un archivo
 git show archivo
 
-Para guardar cambios en editor vin
+Para guardar cambios en editor vim
 Esc Shift zz
 
 Ver diferencias 
