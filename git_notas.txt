@@ -117,5 +117,6 @@ git tag									(muestra etiquetas)
 git show-ref --tags						(muestra etiquetas y commits correspondientes)
 git push origin --tags					(envía etiquetas locales al repositorio remoto)
 git tag -d etiqueta						(elimina el tag etiqueta del repositorio local)
+git push origin :refs/tags/dormido      (elimina el tag dormido del repositorio remoto)
 
 
