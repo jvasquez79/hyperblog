@@ -70,6 +70,7 @@ git branch rama			(crea rama "rama", se usa git checkout rama para visualizarla)
 git show-branch			(muestra ramas existentes y su historia)
 git show-branch --all	(igual que anterior pero con más detalle)
 git merge rama			(fusiona rama actual con "rama")
+git merge --abort		(aborta merge)
 
 Notas sobre merge
 Una acción de merge guarda los resultados en la rama actual y funciona como un commit.
