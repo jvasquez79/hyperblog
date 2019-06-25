@@ -11,8 +11,8 @@ Colocar archivo como "tracked"
 git add archivo
 git add .		(pone como "tracked" todos los archivos del directorio actual)
 
-Cambiar estado de un archivo a "untracked"
-git rm --cache archivo
+git rm --cache archivo  (cambiar estado de un archivo a "untracked")
+git rm -r archivo       (deja de seguir a "archivo" y cualquier archivo de forma recurrente)
 
 Ver configuración
 git config --list				(muestra configuración en modo lista)
@@ -49,6 +49,7 @@ git diff					(entre directorio local y staging)
 Volver en el tiempo
 git reset numero --hard	(regresa el repositorio al commit "numero" perdiendo cambios actuales)
 git reset numero --soft	(regresa el repositorio al commit "numero" dejando cambios actuales en staging)
+git clean -fd           (limpia después de haber hecho reset)
 
 Navegar entre commits
 git checkout numero archivo	(cargar versión de "archivo" como se encontraba en el checkout "numero")
