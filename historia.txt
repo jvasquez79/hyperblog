@@ -6,3 +6,5 @@ Uno se llama Manuel, el otro se llama Luis.
 A Javier le gustan las películas y los juegos de video.
 
 Javier también es un maestro en equis cero y vive en Panama.
+
+Katita es una persona que contribuye a este proyecto open source
