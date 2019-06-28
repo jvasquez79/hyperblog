@@ -67,6 +67,8 @@ git pull origin master								(obtiene rama maestra del repositorio remoto)
 git pull origin master --allow-unrelated-histories	(para sincronizar por primera vez teniendo un repositorio local y uno remoto)
 git clone url										(obtiene repositorio remoto y lo crea en máquina local)
 git remote set-url origin url						(cambia url de repositorio remoto)
+git remote add upstream url                         (añade un repositorio remoto a partir de url, se utiliza con 
+                                                    repositorios a los cuales se les ha hecho fork desde GitHub)
 
 Trabajando con ramas
 git branch				(lista ramas existentes)
