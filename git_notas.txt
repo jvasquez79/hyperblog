@@ -25,7 +25,7 @@ git config --global user.email "xxxxx@gmail.com"
 Crear nueva versión del repositorio luego de haber hecho cambios
 git commit					(se abre un editor para colocar un mensaje)
 git commit -m "Mensaje"		(si ya se ejecutó "add")
-git commit -am "Mensaje"	(para saltar el paso de hacer "add")
+git commit -am "Mensaje"	(para saltar el paso de hacer "add", siempre y cuando los archivos hayan sido añadidos antes con git add)
 
 Ver historial de cambios
 git log
@@ -122,4 +122,10 @@ git push origin --tags					(envía etiquetas locales al repositorio remoto)
 git tag -d etiqueta						(elimina el tag etiqueta del repositorio local)
 git push origin :refs/tags/dormido      (elimina el tag dormido del repositorio remoto)
 
+Editor de Markdown
+https://pandao.github.io/editor.md/en.html
 
+
+
+
+https://getemoji.com
