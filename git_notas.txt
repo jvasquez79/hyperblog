@@ -122,6 +122,13 @@ git push origin --tags					(envía etiquetas locales al repositorio remoto)
 git tag -d etiqueta						(elimina el tag etiqueta del repositorio local)
 git push origin :refs/tags/dormido      (elimina el tag dormido del repositorio remoto)
 
+Guardar cambios de forma temporal
+git stash                       (guarda temporalmente los cambios)
+git stash list                  (lista los cambios guardados temporalmente)
+git stash pop                   (saca los cambios del stash)
+git stash pop english-version   (crea rama a partir de cambios temporales guardados)
+git stash drop                  (borra cambios temporales)
+
 Editor de Markdown
 https://pandao.github.io/editor.md/en.html
 
