@@ -7,6 +7,8 @@ A Javier le gustan las películas y los juegos de video.
 
 Master 1
 
+Master 2
+
 Javier también es un maestro en equis cero y vive en Panama.
 
 Katita es una persona que contribuye a este proyecto open source
