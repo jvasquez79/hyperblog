@@ -129,6 +129,10 @@ git stash pop                   (saca los cambios del stash)
 git stash pop english-version   (crea rama a partir de cambios temporales guardados)
 git stash drop                  (borra cambios temporales)
 
+Limpiar espacio de trabajo de archivos no deseados
+git clean --dry-run (simula borrado sin borrar)
+git clean -f        (elimina archivos no trackeados)
+
 Editor de Markdown
 https://pandao.github.io/editor.md/en.html
 
