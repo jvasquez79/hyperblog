@@ -141,8 +141,8 @@ git add archivo
 git commit --amend
 
 Correcciones
-git reflog
-git reset --HARD head/hash
+git reflog                  (log con mayor detalle)
+git reset --hard head/hash  (regresa repositorio entero al número de head o hash indicado, eliminando incluso la historia en log)
 
 Editor de Markdown
 https://pandao.github.io/editor.md/en.html
