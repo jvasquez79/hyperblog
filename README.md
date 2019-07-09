@@ -5,4 +5,5 @@ Blog para pruebas con Git y Github del [curso de Platzi](https://platzi.com/clas
 > - Bertrand Russell* (1872-1970) Filósofo, matemático y escritor británico..*
 
 ## Acerca de nosotros
-Profesional panameño.
+* Profesional panameño.
+* Entusiasta por la informática
