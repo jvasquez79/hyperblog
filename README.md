@@ -8,3 +8,4 @@ Blog para pruebas con Git y Github del [curso de Platzi](https://platzi.com/clas
 * Profesional panameño.
 * Entusiasta por la informática
 * Padre abnegado
+* Amante del rock clásico
