@@ -136,6 +136,14 @@ git clean -f        (elimina archivos no trackeados)
 Obtener un commit específico de una rama
 git cherry-pick 42b5924
 
+Hacer correcciones sobre último commit
+git add archivo
+git commit --amend
+
+Correcciones
+git reflog
+git reset --HARD head/hash
+
 Editor de Markdown
 https://pandao.github.io/editor.md/en.html
 
