@@ -144,6 +144,24 @@ Correcciones
 git reflog                  (log con mayor detalle)
 git reset --hard head/hash  (regresa repositorio entero al número de head o hash indicado, eliminando incluso la historia en log)
 
+Búsquedas
+git grep color          (muestra los archivos y las líneas donde existe el texto "color")
+git grep -n color       (muestra los archivos y las líneas donde existe el texto "color")
+git grep -c Platzi      (cuenta la cantidad de veces que existe el texto "P" en el repositorio)
+git grep -c "<p>"       (cuenta la cantidad de veces que existe el texto "<p>" en el repositorio)
+git log -S "cabecera"   (cantidad de veces que se ha usado el texto "cabecera" en los commits)
+
+Comandos para alias
+git shortlog                            (log por persona)
+git shortlog -sn                        (cantidad de commits por persona)
+git shortlog -sn --all                  (incluso commits borrados)
+git shortlog -sn --all --no-merges      (todos los commits pero excluyendo los merge)
+git blame                               (muestra quién hizo cambios a un archivo)
+git blame -c                            (indenta resultados)
+git blame css/estilos.css -L35,53 -c    (resultados entre las líneas 35 y 53)
+big branch -r                           (ver ramas remotas)
+big branch -a                           (ver ramas locales en blanco y remotas en rojo, la actual en verde)
+
 Editor de Markdown
 https://pandao.github.io/editor.md/en.html
 
