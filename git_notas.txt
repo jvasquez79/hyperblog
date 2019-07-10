@@ -162,6 +162,11 @@ git blame css/estilos.css -L35,53 -c    (resultados entre las líneas 35 y 53)
 big branch -r                           (ver ramas remotas)
 big branch -a                           (ver ramas locales en blanco y remotas en rojo, la actual en verde)
 
+Para ignorar archivos en Git
+1. Crear archivo .gitignore en raíz del pryecto
+2. Colocar archivos o comodines a excluir (*.jpg), teniendo en cuenta sub-directorios
+3. Hacer add y commit de los cambios
+
 Editor de Markdown
 https://pandao.github.io/editor.md/en.html
 
